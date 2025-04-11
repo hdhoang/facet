@@ -92,7 +92,7 @@ impl core::fmt::Display for JsonParseErrorWithContext<'_> {
     }
 }
 
-impl core::error::Error for JsonParseError {}
+impl std::error::Error for JsonParseError {}
 
 pub struct JsonParser<'input> {
     pub input: &'input str,
